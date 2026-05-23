@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sherlin Varshitha | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <!-- Lucide icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">SV<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <ul class="mobile-menu" id="mobileMenu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">👩‍💻 Computer Science & Engineering · SR University</p>
+      <h1 class="hero-name">
+        Bollam<br/>
+        Sherlin <span class="outline-text">Varshitha</span>
+      </h1>
+      <p class="hero-role">AI Developer &amp; Full-Stack Engineer</p>
+      <p class="hero-bio">
+        I’m passionate about building intelligent web applications and working with machine learning to create meaningful, real-world solutions. I enjoy turning ideas into interactive and efficient systems that are both practical and user-focused.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="https://drive.google.com/file/d/1WU2MMjFkrfYP2eHsJWa7H8Wi-Ymm4US9/view?usp=sharing" download class="btn btn-ghost">
+          <i data-lucide="download" class="icon-sm"></i> Resume
+        </a>
+      </div>
+
+      <div class="social-row">
+        <a href="https://github.com/sherlinvarshitha" target="_blank" class="social-pill">
+          <i data-lucide="github" class="icon-sm"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/sherlin-varshitha-bollam-422158295/" target="_blank" class="social-pill">
+          <i data-lucide="linkedin" class="icon-sm"></i> LinkedIn
+        </a>
+        <a href="https://leetcode.com/u/sherlin_varshitha/" target="_blank" class="social-pill">
+          <i data-lucide="code-2" class="icon-sm"></i> LeetCode
+        </a>
+        <a href="mailto:sherlinvarshithabollam@gmail.com" class="social-pill">
+          <i data-lucide="mail" class="icon-sm"></i> Email
+        </a>
+      </div>
+    </div>
+
+    
+    <div class="hero-photo-wrapper">
+      <div class="photo-ring"></div>
+      <div class="photo-ring ring2"></div>
+      <img
+        src="photo.jpg"
+        alt="Sherlin Varshitha"
+        class="hero-photo"
+        id="heroPhoto"
+        onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex';"
+      />
+      <div class="photo-fallback" id="photoFallback">
+        <span>SV</span>
+        <p class="photo-hint"><photo class="jpg"></photo><br/>with your image</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section bg-surface">
+    <div class="container">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Who I <span>Am</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi! I'm <strong>Sherlin Varshitha</strong>, a passionate Computer Science student
+            at SR University (Batch of 2027). I love turning complex problems into elegant,
+            user-friendly solutions using Python, React, and AI/ML.
+          </p>
+          <p>
+            From building touchless gesture-controlled systems to AI-powered code reviewers, I
+            enjoy working on projects that blend creativity with cutting-edge technology. When I'm
+            not coding, I'm exploring cloud platforms or sharpening my DSA skills on LeetCode.
+          </p>
+          <p>
+            I was awarded the <strong>Vice-Chancellor's Appreciation Certificate</strong> for
+            academic excellence and have earned certifications from top tech companies like
+            Microsoft, Amazon, NVIDIA, and Cisco.
+          </p>
+          <div class="quick-info">
+            <div class="qi-item"><span class="qi-label">📍 Location</span><span>India</span></div>
+            <div class="qi-item"><span class="qi-label">🎓 GPA</span><span>8.68 / 10</span></div>
+            <div class="qi-item"><span class="qi-label">📱 Phone</span><span>+91 7337585399</span></div>
+            <div class="qi-item"><span class="qi-label">💼 Status</span><span class="status-badge">Open to Internships</span></div>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat-card">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num">8.68</span>
+            <span class="stat-label">Current GPA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section bg-dark">
+    <div class="container">
+      <p class="section-label">Technical Skills</p>
+      <h2 class="section-title">My <span>Stack</span></h2>
+      <div class="skills-grid reveal">
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="code" class="icon-md accent"></i>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Python</span><div class="bar"><div class="fill" style="--pct:92%"></div></div></div>
+            <div class="skill-bar-item"><span>Java</span><div class="bar"><div class="fill" style="--pct:78%"></div></div></div>
+            <div class="skill-bar-item"><span>JavaScript</span><div class="bar"><div class="fill" style="--pct:82%"></div></div></div>
+            <div class="skill-bar-item"><span>C</span><div class="bar"><div class="fill" style="--pct:70%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="layout" class="icon-md teal"></i>
+            <h3>Web / Frameworks</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>React.js</span><div class="bar"><div class="fill teal" style="--pct:80%"></div></div></div>
+            <div class="skill-bar-item"><span>Node.js</span><div class="bar"><div class="fill teal" style="--pct:75%"></div></div></div>
+            <div class="skill-bar-item"><span>Flask</span><div class="bar"><div class="fill teal" style="--pct:85%"></div></div></div>
+            <div class="skill-bar-item"><span>HTML/CSS</span><div class="bar"><div class="fill teal" style="--pct:90%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="brain" class="icon-md pink"></i>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>Machine Learning</span><div class="bar"><div class="fill pink" style="--pct:82%"></div></div></div>
+            <div class="skill-bar-item"><span>TensorFlow</span><div class="bar"><div class="fill pink" style="--pct:75%"></div></div></div>
+            <div class="skill-bar-item"><span>OpenCV</span><div class="bar"><div class="fill pink" style="--pct:78%"></div></div></div>
+            <div class="skill-bar-item"><span>NLP</span><div class="bar"><div class="fill pink" style="--pct:72%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-header">
+            <i data-lucide="database" class="icon-md accent"></i>
+            <h3>Databases & Tools</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item"><span>MySQL</span><div class="bar"><div class="fill" style="--pct:80%"></div></div></div>
+            <div class="skill-bar-item"><span>MongoDB</span><div class="bar"><div class="fill" style="--pct:74%"></div></div></div>
+            <div class="skill-bar-item"><span>Git/GitHub</span><div class="bar"><div class="fill" style="--pct:88%"></div></div></div>
+            <div class="skill-bar-item"><span>Pandas/NumPy</span><div class="bar"><div class="fill" style="--pct:83%"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section bg-surface">
+    <div class="container">
+      <p class="section-label">My Work</p>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <p class="section-sub">Click any project card to explore — links to GitHub, LinkedIn post &amp; live demo included.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" data-index="1">
+          <div class="card-top">
+            <span class="project-emoji">🤖</span>
+            <div class="card-links">
+              <a href="https://github.com/sherlinvarshitha/AI-Code-Reviewer" target="_blank" class="card-link-btn" title="GitHub">
+                <i data-lucide="github" class="icon-sm"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/sherlin-varshitha-bollam-422158295/" target="_blank" class="card-link-btn linkedin" title="LinkedIn Post">
+                <i data-lucide="linkedin" class="icon-sm"></i>
+              </a>
+              <a href="#" target="_blank" class="card-link-btn demo" title="Live Demo">
+                <i data-lucide="play-circle" class="icon-sm"></i>
+              </a>
+            </div>
+          </div> 
+          <h3 class="project-title">AI Code Reviewer</h3>
+          <p class="project-desc">
+            An AI-driven web app that analyzes code quality, detects bugs, and suggests improvements using ML/NLP.
+            Integrated with the GitHub API for automated repository insights.
+          </p>
+          <ul class="project-bullets">
+            <li>Scoring system using complexity metrics</li>
+            <li>NLP-based bug pattern detection</li>
+            <li>GitHub repository auto-analysis</li>
+          </ul>
+          <div class="project-stack">
+            <span>Python</span><span>Flask</span><span>NLP</span><span>GitHub API</span><span>ML</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal" data-index="2">
+          <div class="card-top">
+            <span class="project-emoji">🖐️</span>
+            <div class="card-links">
+              <a href="https://github.com/sherlinvarshitha/gesture-controller-ai" target="_blank" class="card-link-btn" title="GitHub">
+                <i data-lucide="github" class="icon-sm"></i>
+              </a>
+              <a href="https://linkedin.com/in/sherlinvarshitha" target="_blank" class="card-link-btn linkedin" title="LinkedIn Post">
+                <i data-lucide="linkedin" class="icon-sm"></i>
+              </a>
+              <a href="#" target="_blank" class="card-link-btn demo" title="Live Demo Video">
+                <i data-lucide="play-circle" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Hand Gesture Video Controller</h3>
+          <p class="project-desc">
+            Real-time touchless video controller using CNN-based hand gesture recognition.
+            Webcam input → gesture → play, pause, volume control.
+          </p>
+          <ul class="project-bullets">
+            <li>CNN model trained with TensorFlow</li>
+            <li>Live webcam gesture detection via OpenCV</li>
+            <li>Supports play, pause, seek &amp; volume</li>
+          </ul>
+          <div class="project-stack">
+            <span>Python</span><span>OpenCV</span><span>TensorFlow</span><span>CNN</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal" data-index="3">
+          <div class="card-top">
+            <span class="project-emoji">🌾</span>
+            <div class="card-links">
+              <a href="https://github.com/sherlinvarshitha/-CodeTech-Weather-Based-Farming-Advisory-System-" target="_blank" class="card-link-btn" title="GitHub">
+                <i data-lucide="github" class="icon-sm"></i>
+              </a>
+              <a href="https://linkedin.com/in/sherlinvarshitha" target="_blank" class="card-link-btn linkedin" title="LinkedIn Post">
+                <i data-lucide="linkedin" class="icon-sm"></i>
+              </a>
+              <a href="#" target="_blank" class="card-link-btn demo" title="Live Demo">
+                <i data-lucide="play-circle" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather-Based Farming Advisory</h3>
+          <p class="project-desc">
+            Location-based system providing real-time weather updates and crop recommendations
+            for farmers in Rajasthan with OTP authentication.
+          </p>
+          <ul class="project-bullets">
+            <li>OTP-based secure login for farmers</li>
+            <li>Extreme weather alert system</li>
+            <li>Crop recommendation engine</li>
+          </ul>
+          <div class="project-stack">
+            <span>HTML/CSS/JS</span><span>Python</span><span>Flask</span><span>Weather API</span>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal" data-index="4">
+          <div class="card-top">
+            <span class="project-emoji">🎮</span>
+            <div class="card-links">
+              <a href="https://github.com/sherlinvarshitha/TICTACTOE" target="_blank" class="card-link-btn" title="GitHub">
+                <i data-lucide="github" class="icon-sm"></i>
+              </a>
+              <a href="https://linkedin.com/in/sherlinvarshitha" target="_blank" class="card-link-btn linkedin" title="LinkedIn Post">
+                <i data-lucide="linkedin" class="icon-sm"></i>
+              </a>
+              <a href="#" target="_blank" class="card-link-btn demo" title="Live Demo">
+                <i data-lucide="play-circle" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Interactive Tic Tac Toe</h3>
+          <p class="project-desc">
+            A fully interactive browser-based Tic Tac Toe game with smooth animations,
+            score tracking, and an unbeatable AI opponent using the minimax algorithm.
+          </p>
+          <ul class="project-bullets">
+            <li>AI opponent with minimax algorithm</li>
+            <li>Two-player &amp; vs-AI modes</li>
+            <li>Score tracking &amp; reset logic</li>
+          </ul>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal" data-index="5">
+          <div class="card-top">
+            <span class="project-emoji">⏱️</span>
+            <div class="card-links">
+              <a href="https://github.com/sherlinvarshitha/STOPWATCH" target="_blank" class="card-link-btn" title="GitHub">
+                <i data-lucide="github" class="icon-sm"></i>
+              </a>
+              <a href="https://linkedin.com/in/sherlinvarshitha" target="_blank" class="card-link-btn linkedin" title="LinkedIn Post">
+                <i data-lucide="linkedin" class="icon-sm"></i>
+              </a>
+              <a href="#" target="_blank" class="card-link-btn demo" title="Live Demo">
+                <i data-lucide="play-circle" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Stopwatch App</h3>
+          <p class="project-desc">
+            A precision stopwatch web app with lap tracking, millisecond accuracy,
+            and a clean animated UI. Built during CodSoft internship.
+          </p>
+          <ul class="project-bullets">
+            <li>Millisecond-accurate timing</li>
+            <li>Lap &amp; split time recording</li>
+            <li>Animated interface with dark/light mode</li>
+          </ul>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal" data-index="6">
+          <div class="card-top">
+            <span class="project-emoji">🧠</span>
+            <div class="card-links">
+              <a href="https://github.com/sherlinvarshitha" target="_blank" class="card-link-btn" title="GitHub">
+                <i data-lucide="github" class="icon-sm"></i>
+              </a>
+              <a href="https://linkedin.com/in/sherlinvarshitha" target="_blank" class="card-link-btn linkedin" title="LinkedIn Post">
+                <i data-lucide="linkedin" class="icon-sm"></i>
+              </a>
+              <a href="#" target="_blank" class="card-link-btn demo" title="Live Demo">
+                <i data-lucide="play-circle" class="icon-sm"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">AI-Integrated Landing Page</h3>
+          <p class="project-desc">
+            A modern, responsive product landing page integrated with an AI chatbot assistant
+            for dynamic user interaction and product recommendations.
+          </p>
+          <ul class="project-bullets">
+            <li>Responsive layout with CSS animations</li>
+            <li>Embedded AI chat widget</li>
+            <li>Lead capture &amp; form validation</li>
+          </ul>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>AI API</span>
+          </div>
+        </div>
+
+      </div><!-- end projects-grid -->
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section bg-dark">
+    <div class="container">
+      <p class="section-label">Work Experience</p>
+      <h2 class="section-title">Where I've <span>Worked</span></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 </div>
+          <div class="timeline-body">
+            <h3>Web Development Intern</h3>
+            <p class="timeline-org">Prodigy InfoTech &amp; CodSoft</p>
+            <p class="timeline-desc">
+              Built interactive web applications including Tic Tac Toe, a precision Stopwatch,
+              and multiple product landing pages. Strengthened expertise in HTML, CSS, and
+              vanilla JavaScript through real deliverables.
+            </p>
+            <div class="timeline-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023 </div>
+          <div class="timeline-body">
+            <h3>AI Intern</h3>
+            <p class="timeline-org">Rinex Technologies</p>
+            <p class="timeline-desc">
+              Worked on AI-based applications and model integration pipelines. Gained hands-on
+              experience deploying ML models into production, automating workflows with Python,
+              and integrating AI features into web applications.
+            </p>
+            <div class="timeline-tags"><span>Python</span><span>ML Models</span><span>AI APIs</span><span>Flask</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section id="certifications" class="section bg-surface">
+    <div class="container">
+      <p class="section-label">Credentials</p>
+      <h2 class="section-title">Certifications &amp; <span>Badges</span></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card azure reveal">
+          <div class="cert-logo">☁️</div>
+          <div class="cert-info">
+            <h3>Azure AI Fundamentals</h3>
+            <p>Microsoft Certified</p>
+            <span class="cert-date">February 2025</span>
+          </div>
+          <a href="https://learn.microsoft.com/en-us/certifications" target="_blank" class="cert-badge-link">View ↗</a>
+        </div>
+
+        <div class="cert-card aws reveal">
+          <div class="cert-logo">🔶</div>
+          <div class="cert-info">
+            <h3>Cloud Practitioner</h3>
+            <p>Amazon Web Services</p>
+            <span class="cert-date">March 2025</span>
+          </div>
+          <a href="https://aws.amazon.com/certification" target="_blank" class="cert-badge-link">View ↗</a>
+        </div>
+
+        <div class="cert-card nvidia reveal">
+          <div class="cert-logo">🧠</div>
+          <div class="cert-info">
+            <h3>Deep Learning Institute</h3>
+            <p>NVIDIA Certified</p>
+            <span class="cert-date">April 2025</span>
+          </div>
+          <a href="https://www.nvidia.com/en-us/training/" target="_blank" class="cert-badge-link">View ↗</a>
+        </div>
+
+        <div class="cert-card cisco reveal">
+          <div class="cert-logo">🌐</div>
+          <div class="cert-info">
+            <h3>CCNA: Intro to Networks</h3>
+            <p>Cisco Certified</p>
+            <span class="cert-date">November 2024</span>
+          </div>
+          <a href="https://www.netacad.com/" target="_blank" class="cert-badge-link">View ↗</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section bg-dark">
+    <div class="container">
+      <p class="section-label">Academic Background</p>
+      <h2 class="section-title">My <span>Education</span></h2>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <h3>B.Tech – Computer Science &amp; Engineering</h3>
+            <p class="edu-inst">SR University</p>
+            <p class="edu-year">2023 – 2027</p>
+            <div class="edu-score-row">
+              <span class="score-badge">GPA: 8.68 / 10</span>
+              <span class="award-badge">🏆 VC Appreciation Certificate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon">📚</div>
+          <div class="edu-body">
+            <h3>Intermediate – MPC</h3>
+            <p class="edu-inst">Sri Chaitanya Junior College</p>
+            <p class="edu-year">Completed June 2023</p>
+            <div class="edu-score-row">
+              <span class="score-badge">94.7 %</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Coursework -->
+      <div class="coursework reveal">
+        <p class="section-label" style="margin-bottom:1rem;">Relevant Coursework</p>
+        <div class="course-tags">
+          <span>OOP</span><span>DSA</span><span>Software Development</span>
+          <span>Cloud Computing</span><span>Computer Networks</span><span>DBMS</span>
+          <span>Dynamic Programming</span><span>Machine Learning</span><span>Artificial Intelligence</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section bg-surface">
+    <div class="container text-center">
+      <p class="section-label">Say Hello</p>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <p class="contact-sub">
+        I'm open to internships, collaborations, and interesting conversations about tech.
+        Reach out — I'd love to hear from you!
+      </p>
+      <div class="contact-links">
+        <a href="mailto:sherlinvarshithabollam@gmail.com" class="contact-card">
+          <i data-lucide="mail" class="icon-lg"></i>
+          <span>Email</span>
+          <small>sherlinvarshithabollam@gmail.com</small>
+        </a>
+        <a href="https://www.linkedin.com/in/sherlin-varshitha-bollam-422158295/" target="_blank" class="contact-card">
+          <i data-lucide="linkedin" class="icon-lg"></i>
+          <span>LinkedIn</span>
+          <small>linkedin.com/in/sherlinvarshitha</small>
+        </a>
+        <a href="https://github.com/sherlinvarshitha" target="_blank" class="contact-card">
+          <i data-lucide="github" class="icon-lg"></i>
+          <span>GitHub</span>
+          <small>github.com/sherlinvarshitha</small>
+        </a>
+        <a href="tel:+917337585399" class="contact-card">
+          <i data-lucide="phone" class="icon-lg"></i>
+          <span>Phone</span>
+          <small>+91 73375 85399</small>
+        </a>
+        <a href="https://wa.me/917337585399" target="_blank" class="contact-card">
+          <i data-lucide="message-circle" class="icon-lg"></i>
+          <span>WhatsApp</span>
+          <small>+91 73375 85399</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-name">Bollam Sherlin Varshitha</p>
+    
+      <a href="#home" class="back-to-top" title="Back to top">
+        <i data-lucide="arrow-up" class="icon-sm"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
